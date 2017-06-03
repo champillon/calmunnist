@@ -14,5 +14,5 @@ Where User is the Scala case class.
 
 <pre>
 resolvers += "Billme Artifactory" at "https://artifact.billme.in.th/artifactory/billme-public/" <br>
-libraryDependencies += "th.pt" %% "demockrazy" % "1.0.0"
+libraryDependencies += "th.pt" %% "calmunnist" % "1.0.0"
 </pre>

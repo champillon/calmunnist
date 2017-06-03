@@ -28,7 +28,7 @@ object Json {
   mapper.registerModule(JodaJacksonModule)
   mapper.registerModule(DefaultScalaModule)
   mapper.setSerializationInclusion(Include.NON_NULL)
-  mapper.setPropertyNamingStrategy(PropertyNamingStrategy.SNAKE_CASE)
+  mapper.setPropertyNamingStrategy(PropertyNamingStrategy.UPPER_CAMEL_CASE)
   mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
 
   def toJson(obj: AnyRef): String = mapper.writeValueAsString(obj)

@@ -1,13 +1,16 @@
 organization := "th.pt"
-name := "demockrazy"
-version := "1.0.1"
+name := "calmunnist"
+version := "1.0.0"
 
 scalaVersion := "2.12.1"
 
 libraryDependencies ++= Seq(
   "joda-time" % "joda-time" % "2.9.7"
   , "org.scala-lang" % "scala-reflect" % scalaVersion.value
-  , "com.github.javafaker" % "javafaker" % "0.13"
+  , "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.8.6"
+  , "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0"
+  , "joda-time" % "joda-time" % "2.9.7"
+  , "org.scalaj" %% "scalaj-http" % "2.3.0"
 )
 
 libraryDependencies ++= Seq(
